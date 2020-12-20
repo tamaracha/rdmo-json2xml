@@ -1,0 +1,51 @@
+{
+  "name": "rdmo-json2xml",
+  "version": "0.0.1",
+  "description": "Export RDMO catalogs authored in JSON format to xml",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix -- | snazzy",
+    "test": "ava",
+    "preversion": "npm test",
+    "version": "mate -w CHANGELOG.md && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamaracha/rdmo-json2xml.git"
+  },
+  "keywords": [
+    "RDMO",
+    "XML",
+    "export"
+  ],
+  "author": "Tamara Cook",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamaracha/rdmo-json2xml/issues"
+  },
+  "homepage": "https://github.com/tamaracha/rdmo-json2xml#readme",
+  "private": true,
+  "dependencies": {
+    "rdmo-json-schema": "github:tamaracha/rdmo-json-schema",
+    "xmlbuilder2": "^2.4.0"
+  },
+  "devDependencies": {
+    "ava": "^3.14.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run lint --",
+    "*.{yml,yaml,json}": "prettier --write"
+  }
+}
