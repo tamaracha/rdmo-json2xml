@@ -2,7 +2,7 @@
   "name": "rdmo-json2xml",
   "version": "0.0.1",
   "description": "Export RDMO catalogs authored in JSON format to xml",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "standard --fix -- | snazzy",
     "test": "ava",
