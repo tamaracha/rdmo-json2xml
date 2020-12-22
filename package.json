@@ -1,6 +1,6 @@
 {
   "name": "rdmo-json2xml",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Export RDMO catalogs authored in JSON format to xml",
   "main": "lib/index.js",
   "scripts": {
