@@ -13,8 +13,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Serialization functions for domain, options, and question catalog
 
-## [0.0.1] - 2020-12-15
-
 [Unreleased]: https://github.com/tamaracha/rdmo-json2xml/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/tamaracha/rdmo-json2xml/releases/tag/v0.1.0
 
