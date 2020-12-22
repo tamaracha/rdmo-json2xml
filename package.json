@@ -34,6 +34,8 @@
     "ava": "^3.14.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
+    "markdownlint": "^0.22.0",
+    "markdownlint-cli2": "^0.0.13",
     "prettier": "^2.2.1",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3"
@@ -46,6 +48,7 @@
   },
   "lint-staged": {
     "*.js": "npm run lint --",
+    "*.md": "markdownlint-cli2",
     "*.{yml,yaml,json}": "prettier --write"
   }
 }
