@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/tamaracha/rdmo-json2xml#readme",
   "private": true,
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "rdmo-json-schema": "https://github.com/tamaracha/rdmo-json-schema/releases/download/v0.2.0/rdmo-json-schema-0.2.0.tgz",
     "xmlbuilder2": "^2.4.0"
